@@ -1,0 +1,333 @@
+/*font import*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
+
+/*root*/
+:root {
+    --brandColor: #797171;
+    --themeColor: #5198ec;
+    --name: #5a4e4e;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+/*registration form*/
+.formField {
+    width: 100%;
+}
+
+.MuiFormControl-root.MuiTextField-root.formField.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    position: sticky;
+    top: -5px;
+    background: white;
+    padding-top: 3px;
+}
+
+.contactSearch .MuiOutlinedInput-root.MuiInputBase-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-sizeSmall.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+    border-radius: 100px;
+    margin-bottom: 8px;
+}
+
+/*login page*/
+.loginPageIcon {
+    font-size: 1.5rem;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+/*loading animation*/
+.loadingAnimation {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.getDataLoader {
+    width: 4rem;
+}
+
+.contactUpdateLoader {
+    width: 1.1rem;
+}
+
+/*nav bar*/
+.topNav .dropdown-menu[data-bs-popper] {
+    left: -120px !important;
+}
+
+.navTop {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.topNav .dropdown-toggle::after {
+    display: none !important;
+}
+
+.topNavBar {
+    font-size: 1.5rem;
+    color: var(--brandColor);
+    cursor: pointer;
+}
+
+.brandName {
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: var(--brandColor);
+}
+
+/*drawer close btn*/
+.btn-close:focus {
+    box-shadow: none;
+}
+
+/*sitebar container*/
+.sidebarContainer {
+    padding-left: 5px;
+}
+
+/*all contact css*/
+.contactList {
+    height: 80vh;
+}
+
+.allContacts {
+    bottom: 0 !important;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width: 100%;
+    padding: 5px;
+    margin: 0px 8px;
+    overflow-y: scroll;
+    height: 100%;
+    scrollbar-width: none;
+}
+
+.contactImg {
+    width: 40px !important;
+    border-radius: 50%;
+}
+
+.allContactName {
+    font-family: "Open Sans";
+    font-weight: 500;
+    color: var(--themeColor);
+
+}
+
+.singleContactRow {
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 4px;
+    transition: .5s ease;
+    cursor: pointer;
+    background: rgba(193, 190, 190, 0.16);
+}
+
+.singleContactRow:hover {
+    background: rgba(218, 218, 245, 0.71);
+}
+
+.contactLetter {
+    width: 40px;
+    height: 40px;
+    background: var(--themeColor);
+    border-radius: 50%;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+/*add contact form*/
+.contactAddContainer {
+
+    position: relative;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    min-height: 93%;
+}
+
+.imageViewer {
+    background: rgba(0, 0, 0, 0.09);
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #6fb1fd;
+    z-index: 2;
+}
+
+.imageViewer img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+}
+
+.uploader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.uploader .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+    color: var(--brandColor);
+}
+
+.additionalRemove {
+    font-size: 1rem;
+}
+
+.addContactSubmit svg {
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: 0.5s ease;
+}
+
+/*contact details*/
+.pf {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--brandColor);
+}
+
+.contactDetailLetter {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--themeColor);
+    margin: auto;
+}
+
+.contactDetailLetter p {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.contactName {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    color: var(--name);
+    font-size: 1.4rem;
+    margin-top: 8px;
+}
+
+.identity {
+    font-size: .8rem;
+    text-transform: lowercase;
+}
+
+.contactDetailIcons {
+    font-size: 1.3rem;
+    color: var(--themeColor);
+}
+
+.detailText {
+    color: var(--name) !important;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+}
+
+.detailNotation {
+    margin-left: 37px;
+    color: #959393;
+    text-transform: lowercase;
+    font-size: 0.7rem;
+}
+
+.EditNotation {
+    color: #959393;
+    text-transform: lowercase;
+    font-size: 0.7rem;
+}
+
+.contactDetailBackIcon {
+    cursor: pointer;
+}
+
+.contactDetailNoPreview {
+    color: #a8a8a885;
+    font-size: 3rem;
+}
+
+.contactDetailEdit {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.contactUpdateBtn {
+    color: #3e95e0;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.contactImageUpdate {
+    position: absolute;
+
+    color: #3e95e0;
+    cursor: pointer;
+
+}
+
+.imagefiledBox {
+    position: relative;
+}
+
+.imageLoader {
+    position: absolute;
+    font-size: .7rem;
+    color: #c4bfbf;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+}
+
+.contactDltBtn {
+    color: #e83030;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.contactDeleteIcon {
+    color: #fa728d;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-right: .4rem;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid #fa728d;
+    border-radius: 50%;
+}
+
+.contactEditIcon {
+    color: var(--themeColor);
+    font-size: 1.4rem;
+    border: 2px solid var(--themeColor);
+    width: 30px;
+    padding: 5px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.deleteButton {
+    outline: none;
+}
+
+.deleteButton:focus {
+    /* outline: 0; */
+    box-shadow: none !important;
+}
